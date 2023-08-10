@@ -53,7 +53,7 @@ jobs:
         uses: cypress-io/github-action@v2
 
       - name: 'Upload screenshots and videos to Slack'
-        uses: cloudio-saas/cypress-upload-to-workchat-action-new@v1.0.3v1.0.3
+        uses: cloudio-saas/cypress-upload-to-workchat-action-new@v1.0.8
         with:
           token: ${{ secrets.SLACK_TOKEN }}
           channel: '12345...'
@@ -75,7 +75,7 @@ jobs:
         uses: cypress-io/github-action@v2
 
       - name: 'Upload screenshots and videos to Slack'
-        uses: cloudio-saas/cypress-upload-to-workchat-action-new@v1.0.3v1.0.3
+        uses: cloudio-saas/cypress-upload-to-workchat-action-new@v1.0.8
         if: failure()
         with:
           token: ${{ secrets.SLACK_TOKEN }}
