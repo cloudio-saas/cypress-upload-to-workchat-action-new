@@ -1,5 +1,5 @@
 <p>
-  <a href="https://github.com/SreeniIO/cypress-upload-to-workchat-action/actions"><img alt="typescript-action status" src="https://github.com/actions/typescript-action/workflows/build-test/badge.svg"></a>
+  <a href="https://github.com/cloudio-saas/cypress-upload-to-workchat-action/actions"><img alt="typescript-action status" src="https://github.com/actions/typescript-action/workflows/build-test/badge.svg"></a>
 </p>
 
 # Upload Cypress videos and screenshots directly to Workplace Chat
@@ -53,7 +53,7 @@ jobs:
         uses: cypress-io/github-action@v2
 
       - name: 'Upload screenshots and videos to Slack'
-        uses: SreeniIO/cypress-upload-to-workchat-action@v1.0.3
+        uses: cloudio-saas/cypress-upload-to-workchat-action-new@v1.0.3v1.0.3
         with:
           token: ${{ secrets.SLACK_TOKEN }}
           channel: '12345...'
@@ -75,7 +75,7 @@ jobs:
         uses: cypress-io/github-action@v2
 
       - name: 'Upload screenshots and videos to Slack'
-        uses: SreeniIO/cypress-upload-to-workchat-action@v1.0.3
+        uses: cloudio-saas/cypress-upload-to-workchat-action-new@v1.0.3v1.0.3
         if: failure()
         with:
           token: ${{ secrets.SLACK_TOKEN }}
